@@ -1,0 +1,78 @@
+{
+  "name": "@strapify/polaris-markdown",
+  "version": "0.0.1",
+  "description": "Polaris markdown component",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "styles"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "develop": "start-storybook -p 6006",
+    "release": "standard-version",
+    "lint": "eslint --fix .",
+    "lint:staged": "eslint --fix",
+    "husky:install": "husky install",
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint --edit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@shopify/polaris": "^9.5.0",
+    "@shopify/polaris-icons": "^4.19.0",
+    "@shopify/react-i18n": "^6.4.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/eslint-parser": "^7.17.0",
+    "@babel/preset-react": "^7.16.7",
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@shopify/polaris": "^9.5.0",
+    "@shopify/polaris-icons": "^4.19.0",
+    "@shopify/react-i18n": "^6.4.0",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.11",
+    "@types/lodash": "^4.14.182",
+    "@types/react": "^17.0.44",
+    "@types/react-dom": "^17.0.16",
+    "@typescript-eslint/eslint-plugin": "^5.21.0",
+    "@typescript-eslint/parser": "^5.21.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "lodash": "^4.17.21",
+    "prettier": "^2.6.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-markdown": "^8.0.3",
+    "standard-version": "^9.3.2",
+    "ts-loader": "^8.3.0",
+    "typescript": "^4.6.3",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "lint-staged": {
+    "*.(ts|tsx|js)": [
+      "npm run lint:staged"
+    ]
+  }
+}

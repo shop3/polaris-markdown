@@ -1,0 +1,24 @@
+.Markdown--container {
+  word-break: break-word;
+}
+
+.Markdown--img {
+  max-width: 100%;
+  box-shadow: var(--p-shadow-base);
+  border-radius: var(--p-border-radius-1)
+}
+
+.Markdown--hr {
+  border: none;
+  border-top: var(--p-border-base);
+}
+
+.Markdown--blockquote {
+  border-left: var(--p-space-1) solid var(--p-border-subdued);
+  color: var(--p-text-subdued);
+  background-color: var(--p-surface-subdued);
+  padding: var(--p-space-4) var(--p-space-8);
+  margin-left: 0;
+  margin-right: 0;
+  box-shadow: var(--p-shadow-base);
+}
