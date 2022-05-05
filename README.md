@@ -1,6 +1,6 @@
-# Strapify Polaris Common
+# Strapify Polaris Markdown
 
-Collection of Polaris components ready to use in your applications.
+Polaris markdown component.
 
 ## Installation
 
