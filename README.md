@@ -1,6 +1,6 @@
 # Shop3 Polaris Markdown
 
-Polaris markdown component.
+Polaris markdown component ready to use in Shopify applications.
 
 ## Installation
 
@@ -24,6 +24,10 @@ const Page = () => {
     )
 }
 ```
+
+## Storybook
+
+Components are documented in Storybook at https://shop3.github.io/polaris-markdown/
 
 # Development
 
