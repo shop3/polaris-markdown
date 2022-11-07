@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/shop3/polaris-markdown/compare/v0.0.3...v0.1.0) (2022-11-07)
+
+
+### Features
+
+* include react-markdown in build ([479121f](https://github.com/shop3/polaris-markdown/commit/479121f4f849c851b5740713728154754d5751ab))
+* removed react lazy ([6d07839](https://github.com/shop3/polaris-markdown/commit/6d07839da919fd807ae7ecd82430e96bc6e0a694))
+
 ### [0.0.3](https://github.com/shop3/polaris-markdown/compare/v0.0.2...v0.0.3) (2022-06-09)
 
 ### [0.0.2](https://github.com/shop3/polaris-markdown/compare/v0.0.1...v0.0.2) (2022-05-18)
