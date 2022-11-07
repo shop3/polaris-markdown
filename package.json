@@ -10,6 +10,10 @@
     "lib",
     "styles"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shop3/polaris-markdown.git"
+  },
   "scripts": {
     "build": "webpack",
     "develop": "start-storybook -p 6006",
@@ -68,6 +72,18 @@
     "webpack-cli": "^4.10.0",
     "webpack-node-externals": "^3.0.0"
   },
+  "author": {
+    "name": "Shop3",
+    "email": "admin@shop3.dev",
+    "url": "https://shop3.dev"
+  },
+  "maintainers": [
+    {
+      "name": "Shop3",
+      "email": "admin@shop3.dev",
+      "url": "https://shop3.dev"
+    }
+  ],
   "lint-staged": {
     "*.(ts|tsx|js)": [
       "npm run lint:staged"
