@@ -1,20 +1,20 @@
-# Strapify Polaris Markdown
+# Shop3 Polaris Markdown
 
 Polaris markdown component.
 
 ## Installation
 
 ```bash
-npm install --save @strapify/polaris-markdown
+npm install --save @shop3/polaris-markdown
 ```
 
 ## Usage
 
 ```js
-import PolarisMarkdown from '@strapify/polaris-markdown';
+import PolarisMarkdown from '@shop3/polaris-markdown';
 
 // import css
-import '@strapify/polaris-markdown/styles/markdown.css';
+import '@shop3/polaris-markdown/styles/markdown.css';
 
 const Page = () => {
     return (
