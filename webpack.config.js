@@ -1,6 +1,5 @@
 /* eslint-disable */
 const path = require('path');
-const nodeExternals = require('webpack-node-externals');
 /* eslint-enable */
 
 module.exports = {
@@ -16,6 +15,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: 'babel-loader',
+      },
+      {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/,
@@ -26,7 +29,10 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.tsx', '.ts'],
+    extensions: ['.tsx', '.ts', '.js'],
   },
-  externals: [nodeExternals()],
+  externals: [
+    'react',
+    '@shopify/polaris',
+  ],
 };
