@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/shop3/polaris-markdown/compare/v0.1.0...v0.1.1) (2022-11-09)
+
+
+### Bug Fixes
+
+* removed path module from build ([c77d4ad](https://github.com/shop3/polaris-markdown/commit/c77d4ad18ba9969e7ccfbdab3da5187c80b30a74))
+
 ## [0.1.0](https://github.com/shop3/polaris-markdown/compare/v0.0.3...v0.1.0) (2022-11-07)
 
 
