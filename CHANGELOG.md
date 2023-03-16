@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/shop3/polaris-markdown/compare/v0.1.1...v0.2.0) (2023-03-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgraded dependencies
+
+### Features
+
+* upgraded dependencies ([49e508d](https://github.com/shop3/polaris-markdown/commit/49e508d6d984753d5639da825e5faad45409f048))
+
 ### [0.1.1](https://github.com/shop3/polaris-markdown/compare/v0.1.0...v0.1.1) (2022-11-09)
 
 
