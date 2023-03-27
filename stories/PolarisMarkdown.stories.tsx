@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Page } from '@shopify/polaris';
+import { LegacyCard, Page } from '@shopify/polaris';
 
 import PolarisMarkdown from '../src';
 
@@ -10,9 +10,9 @@ export default {
 
 const Template = (args: any) => (
   <Page narrowWidth>
-    <Card sectioned>
+    <LegacyCard sectioned>
       <PolarisMarkdown {...args} />
-    </Card>
+    </LegacyCard>
   </Page>
 );
 

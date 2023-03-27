@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { DisplayText, Link, List, TextContainer, TextStyle } from '@shopify/polaris';
+import { Text, Link, List, LegacyStack, InlineCode } from '@shopify/polaris';
 
 interface Props {
   children: string;
@@ -9,59 +9,59 @@ interface Props {
 const PolarisMarkdown: React.FC<Props> = ({ children = '' }) => {
   const content = children.replace(/\n/g, '  \n');
   return (
-    <TextContainer>
+    <LegacyStack vertical>
       <ReactMarkdown
         className={['Polaris-TextContainer', 'Markdown--container'].join(' ')}
         components={{
           h1: ({ children }) => (
-            <DisplayText size="extraLarge" element="h1">
+            <Text variant="heading4xl" as="h1">
               {children}
-            </DisplayText>
+            </Text>
           ),
           h2: ({ children }) => (
-            <DisplayText size="large" element="h2">
+            <Text variant="heading3xl" as="h2">
               {children}
-            </DisplayText>
+            </Text>
           ),
           h3: ({ children }) => (
-            <DisplayText size="medium" element="h3">
+            <Text variant="heading2xl" as="h3">
               {children}
-            </DisplayText>
+            </Text>
           ),
           h4: ({ children }) => (
-            <DisplayText size="small" element="h4">
+            <Text variant="headingXl" as="h4">
               {children}
-            </DisplayText>
+            </Text>
           ),
           h5: ({ children }) => (
-            <DisplayText size="small" element="h5">
+            <Text variant="headingLg" as="h5">
               {children}
-            </DisplayText>
+            </Text>
           ),
           h6: ({ children }) => (
-            <DisplayText size="small" element="h6">
+            <Text variant="headingMd" as="h6">
               {children}
-            </DisplayText>
+            </Text>
           ),
-          em: ({ children }) => <TextStyle variation="subdued">{children}</TextStyle>,
-          strong: ({ children }) => <TextStyle variation="strong">{children}</TextStyle>,
+          em: ({ children }) => <Text as="span" color="subdued">{children}</Text>,
+          strong: ({ children }) => <Text as="span" fontWeight="semibold" >{children}</Text>,
           a: ({ children, href }) => <Link url={href}>{children}</Link>,
           ol: ({ children }) => <List type="number">{children}</List>,
           ul: ({ children }) => <List type="bullet">{children}</List>,
           li: ({ children }) => <List.Item>{children}</List.Item>,
           img: ({ src, alt }) => <img className="Markdown--img" src={src} alt={alt} />,
           hr: () => <hr className="Markdown--hr" />,
-          code: ({ children }) => <TextStyle variation="code">{children}</TextStyle>,
+          code: ({ children }) => <Text as="span"><InlineCode>{children}</InlineCode></Text>,
           blockquote: ({ children }) => (
             <blockquote className="Markdown--blockquote">
-              <TextContainer spacing="tight">{children}</TextContainer>
+              <LegacyStack spacing="tight">{children}</LegacyStack>
             </blockquote>
           ),
         }}
       >
         {content}
       </ReactMarkdown>
-    </TextContainer>
+    </LegacyStack>
   );
 };
 
