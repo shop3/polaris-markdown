@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/shop3/polaris-markdown/compare/v0.2.1...v0.2.2) (2023-03-29)
+
+
+### Bug Fixes
+
+* fixed blockquote styling ([5044f60](https://github.com/shop3/polaris-markdown/commit/5044f608a528c5bf244a68837c0292c588f58b24))
+
 ### [0.2.1](https://github.com/shop3/polaris-markdown/compare/v0.2.0...v0.2.1) (2023-03-27)
 
 
