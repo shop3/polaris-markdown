@@ -54,7 +54,7 @@ const PolarisMarkdown: React.FC<Props> = ({ children = '' }) => {
           code: ({ children }) => <Text as="span"><InlineCode>{children}</InlineCode></Text>,
           blockquote: ({ children }) => (
             <blockquote className="Markdown--blockquote">
-              <LegacyStack spacing="tight">{children}</LegacyStack>
+              <LegacyStack vertical>{children}</LegacyStack>
             </blockquote>
           ),
         }}
